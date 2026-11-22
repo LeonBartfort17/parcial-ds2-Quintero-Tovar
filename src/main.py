@@ -13,11 +13,11 @@ def Protocolo_Datos_Mesa():
                 if "ticket_hora" in ag:
                    muVal = ag["ticket_hora"] 
                    objetosM = mda(tk_lst,muVal)
-                   L = objM.tasa_de_llegadas()
+                   L = objetosM.tasa_de_llegadas()
                    if L>=0:
-                       r,Lq,Wq=objM.metricas_mm1(L)
-                       Esp_Sim = objM.simular() 
-                       aux1,aux2,wq_9_5 = objM.metricas_mm1(9.5)
+                       r,Lq,Wq=objetosM.metricas_mm1(L)
+                       Esp_Sim = objetosM.simular() 
+                       aux1,aux2,wq_9_5 = objetosM.metricas_mm1(9.5)
 
                        s=0; c=0 
                        for e in Esp_Sim:
